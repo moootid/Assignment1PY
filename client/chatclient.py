@@ -35,8 +35,7 @@ class ChatClient:
 
     def send_alive_message(self):
         while self.alive:
-            time.sleep(10)  # Example interval, adjust based on server requirements
-            # print("Sending alive message")
+            time.sleep(10) 
             self.send_message("-SERVER-", "Alive " + self.client_id)
 
     def parse_message(self, message):
